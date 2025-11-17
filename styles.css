@@ -340,42 +340,16 @@ body {
     align-items: center;
 }
 
-.about-images {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.about-image-main img {
+.about-image img {
     width: 100%;
     border-radius: 20px;
     box-shadow: var(--shadow);
     transition: var(--transition);
 }
 
-.about-image-main img:hover {
-    transform: scale(1.02);
-}
-
-.about-image-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-}
-
-.about-image-gallery img {
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-    object-fit: cover;
-    object-position: top;
-    height: 200px;
-}
-
-.about-image-gallery img:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.2);
+.about-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.2);
 }
 
 .about-text h3 {
@@ -449,34 +423,42 @@ body {
 
 .skill-category h3 {
     font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+.skill-description {
+    color: var(--text-secondary);
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.skill-tags {
+    list-style: none;
+    padding: 0;
     margin-bottom: 30px;
 }
 
-.skill-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.skill-item span {
-    display: block;
+.skill-tags li {
+    padding: 10px 15px;
     margin-bottom: 10px;
-    color: var(--text-secondary);
+    background: rgba(37, 99, 235, 0.1);
+    border-left: 3px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--text-primary);
+    font-weight: 500;
+    transition: var(--transition);
 }
 
-.skill-bar {
-    height: 10px;
-    background: #e2e8f0;
-    border-radius: 10px;
-    overflow: hidden;
+.skill-tags li:hover {
+    background: rgba(37, 99, 235, 0.15);
+    transform: translateX(5px);
 }
 
-.skill-progress {
-    height: 100%;
-    background: var(--gradient);
-    border-radius: 10px;
-    transition: width 1s ease;
-    box-shadow: 0 2px 10px rgba(37, 99, 235, 0.2);
+.btn-skill {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
 }
 
 /* Timeline */
@@ -685,6 +667,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    box-shadow: var(--shadow);
 }
 
 .contact-item {
