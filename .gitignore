@@ -1,0 +1,17 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*~
+
+# Email setup guide (optional - keep if you want)
+# EMAIL_SETUP.md
