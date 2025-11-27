@@ -206,7 +206,8 @@ body {
 }
 
 .highlight {
-    color: var(--primary-color);
+    color: #ffffff;
+    font-weight: 700;
 }
 
 .hero-subtitle {
@@ -369,7 +370,7 @@ body {
 
 .about-image img:hover {
     transform: scale(1.15) rotate(2deg);
-    box-shadow: 0 20px 50px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 20px 50px rgba(255, 255, 255, 0.3);
     animation: none;
 }
 
@@ -396,7 +397,7 @@ body {
 .about-text h3 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: var(--primary-color);
+    color: #ffffff;
 }
 
 .about-text p {
@@ -416,21 +417,21 @@ body {
     align-items: center;
     gap: 15px;
     padding: 15px;
-    background: #f8fafc;
+    background: #1a1a1a;
     border-radius: 10px;
     transition: var(--transition);
-    border: 1px solid #e2e8f0;
+    border: 1px solid #333333;
 }
 
 .info-item:hover {
-    background: #ffffff;
+    background: #0a0a0a;
     transform: translateX(10px);
-    border-color: var(--primary-color);
+    border-color: #ffffff;
 }
 
 .info-item i {
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: #ffffff;
 }
 
 /* Skills Section */
@@ -442,23 +443,23 @@ body {
 }
 
 .skill-category {
-    background: #ffffff;
+    background: #1a1a1a;
     padding: 40px;
     border-radius: 20px;
     transition: var(--transition);
-    border: 1px solid #e2e8f0;
+    border: 1px solid #333333;
 }
 
 .skill-category:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow);
-    background: #f8fafc;
-    border-color: var(--primary-color);
+    background: #0a0a0a;
+    border-color: #ffffff;
 }
 
 .skill-icon {
     font-size: 3rem;
-    color: var(--primary-color);
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
@@ -483,16 +484,16 @@ body {
 .skill-tags li {
     padding: 10px 15px;
     margin-bottom: 10px;
-    background: rgba(37, 99, 235, 0.1);
-    border-left: 3px solid var(--primary-color);
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 3px solid #ffffff;
     border-radius: 5px;
-    color: var(--text-primary);
+    color: #ffffff;
     font-weight: 500;
     transition: var(--transition);
 }
 
 .skill-tags li:hover {
-    background: rgba(37, 99, 235, 0.15);
+    background: rgba(255, 255, 255, 0.2);
     transform: translateX(5px);
 }
 
@@ -516,8 +517,8 @@ body {
     transform: translateX(-50%);
     width: 3px;
     height: 100%;
-    background: var(--gradient);
-    box-shadow: 0 0 10px rgba(37, 99, 235, 0.2);
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .timeline-item {
@@ -540,32 +541,32 @@ body {
     transform: translateX(-50%);
     width: 20px;
     height: 20px;
-    background: var(--primary-color);
+    background: #ffffff;
     border-radius: 50%;
-    border: 3px solid #ffffff;
-    box-shadow: 0 0 15px rgba(37, 99, 235, 0.4);
+    border: 3px solid #000000;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
     z-index: 1;
 }
 
 .timeline-content {
-    background: #ffffff;
+    background: #1a1a1a;
     padding: 30px;
     border-radius: 15px;
     width: 90%;
     transition: var(--transition);
     box-shadow: var(--shadow);
-    border: 1px solid #e2e8f0;
+    border: 1px solid #333333;
 }
 
 .timeline-content:hover {
-    background: #f8fafc;
+    background: #0a0a0a;
     transform: translateY(-5px);
-    border-color: var(--primary-color);
-    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.15);
+    border-color: #ffffff;
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.15);
 }
 
 .timeline-date {
-    color: var(--primary-color);
+    color: #ffffff;
     font-weight: 600;
     display: block;
     margin-bottom: 10px;
@@ -589,18 +590,18 @@ body {
 }
 
 .project-card {
-    background: #ffffff;
+    background: #1a1a1a;
     border-radius: 20px;
     overflow: hidden;
     transition: var(--transition);
-    border: 1px solid #e2e8f0;
+    border: 1px solid #333333;
     box-shadow: var(--shadow);
 }
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 40px rgba(37, 99, 235, 0.2);
-    border-color: var(--primary-color);
+    box-shadow: 0 10px 40px rgba(255, 255, 255, 0.2);
+    border-color: #ffffff;
 }
 
 .project-image {
@@ -656,19 +657,19 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: var(--primary-color);
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
+    color: #000000;
     transition: var(--transition);
-    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
 }
 
 .project-link:hover {
     transform: scale(1.2);
-    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
-    background: var(--secondary-color);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.5);
+    background: #cccccc;
 }
 
 .project-info {
@@ -693,11 +694,11 @@ body {
 
 .project-tags span {
     padding: 5px 15px;
-    background: rgba(37, 99, 235, 0.1);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     font-size: 0.9rem;
-    color: var(--primary-color);
-    border: 1px solid rgba(37, 99, 235, 0.2);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* Contact Section */
@@ -721,10 +722,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    background: #ffffff;
+    background: #1a1a1a;
     padding: 40px;
     border-radius: 20px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #333333;
     box-shadow: var(--shadow);
 }
 
@@ -736,7 +737,7 @@ body {
 
 .contact-item i {
     font-size: 2rem;
-    color: var(--primary-color);
+    color: #ffffff;
 }
 
 .contact-item h4 {
@@ -752,10 +753,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background: #ffffff;
+    background: #1a1a1a;
     padding: 40px;
     border-radius: 20px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #333333;
     box-shadow: var(--shadow);
 }
 
@@ -763,10 +764,10 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 15px;
-    background: #f8fafc;
-    border: 2px solid #e2e8f0;
+    background: #0a0a0a;
+    border: 2px solid #333333;
     border-radius: 10px;
-    color: var(--text-primary);
+    color: #ffffff;
     font-family: inherit;
     transition: var(--transition);
 }
@@ -774,9 +775,9 @@ body {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--primary-color);
-    background: #ffffff;
-    box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
+    border-color: #ffffff;
+    background: #000000;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
 .form-group textarea {
@@ -826,7 +827,7 @@ body {
 }
 
 .footer-links a:hover {
-    color: var(--primary-color);
+    color: #ffffff;
     transform: translateY(-3px);
 }
 
