@@ -102,6 +102,14 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-color);
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.navbar.scrolled .nav-brand {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .nav-menu {
@@ -340,16 +348,43 @@ body {
     align-items: center;
 }
 
+.about-image {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
 .about-image img {
     width: 100%;
     border-radius: 20px;
     box-shadow: var(--shadow);
-    transition: var(--transition);
+    transition: transform 0.6s ease, box-shadow 0.3s ease;
+    animation: fadeInScale 1s ease, float 6s ease-in-out infinite;
 }
 
 .about-image img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.2);
+    transform: scale(1.15) rotate(2deg);
+    box-shadow: 0 20px 50px rgba(37, 99, 235, 0.3);
+    animation: none;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .about-text h3 {
@@ -572,11 +607,24 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: var(--transition);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), filter 0.3s ease;
+    animation: fadeIn 0.8s ease;
 }
 
 .project-card:hover .project-image img {
-    transform: scale(1.1);
+    transform: scale(1.2) rotate(-2deg);
+    filter: brightness(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .project-overlay {

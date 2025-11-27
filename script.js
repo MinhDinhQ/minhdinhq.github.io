@@ -21,6 +21,13 @@ let lastScroll = 0;
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
+    // Add scrolled class to navbar when scrolling down to show name
+    if (currentScroll > 100) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+
     if (currentScroll <= 0) {
         navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.3)';
     } else {
